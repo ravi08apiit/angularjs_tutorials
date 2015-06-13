@@ -1,0 +1,44 @@
+<DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Exercise 1
+		</title>
+		<style>
+
+		</style>
+	</head>
+	<body>
+		<h2>Inventory</h2>
+		<section id="mainContainer" ng-app>
+			<div ng-controller="cartCotroller">
+				<table>
+					<tr>
+						<th style="text-align:left">Title</th>
+						<th style="text-align:left">Quantity</th>
+						<th style="text-align:left">Price</th>
+					</tr>
+					<tbody>
+						<tr ng-repeat="item in items">
+							<td style="width:100px">{{item.title}}</td>
+							<td style="width:100px">{{item.quantity}}</td>
+							<td style="width:100px">{{item.price}}</td>
+							<td><a href="javascript:void(0)" ng-click="remove($index)">Remove</a></td>
+						</tr>
+					</tbody>
+				</table>
+				<div>
+					<p>
+						<span>Enter Item <input type="text" ng-model="title"></span>
+						<span>Enter Quantity <input type="text" ng-model="quantity"></span>
+						<span>Enter price <input type="text" ng-model="price"></span>
+						<button ng-click = "addStock()">Add Item</button>
+					</p>
+				</div>
+			</div>
+		</section>		
+	</body>
+	<script type="text/javascript" src="../libs/angular.js"></script>
+	<script type="text/javascript" src="../libs/angular-route.js"></script>	
+	<script type="text/javascript" src="controller.js"></script>
+</html>
