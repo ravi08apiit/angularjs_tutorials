@@ -1,3 +1,3 @@
 app.controller('d3Controller', ['$scope', function($scope){
-	$scope.title = 'Data Driven Diagram Tutorial'
+	$scope.title = 'Data Driven Diagram Tutorial (D3JS)'
 }]);
