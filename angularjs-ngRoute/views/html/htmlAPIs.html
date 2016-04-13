@@ -1,0 +1,12 @@
+<div class="container">
+	<h3>HTML5 APIs (GeoLocation)</h3>
+	<button ng-click="htmlCtrl.getLocaltion()">Get Location</button>
+	<p class="error" ng-bind="htmlCtrl.localtion.error"></p>
+	<p>Latitude:</span><span ng-bind="htmlCtrl.localtion.latitude"></p>
+	<p>Longitude:</span><span ng-bind="htmlCtrl.localtion.longitude"></p>
+</div>
+<div class="container col-three">
+	<h3>HTML API Drag Drop</h3>
+	<dragable-element url="htmlCtrl.imageUrl"></dragable-element>
+</div>
+<div class="container col-three" dropable></div>

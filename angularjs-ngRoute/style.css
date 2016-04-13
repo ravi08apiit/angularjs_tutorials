@@ -1,0 +1,42 @@
+.menuItem ul{
+	list-style-type:none;
+	clear: both;			
+}
+
+.menuItem ul li{
+	display: inline-block;
+	width: 8%;
+}
+.menuItem  ul a{
+	text-decoration: none;
+	display: block;
+	border-right: 1px solid #ccc;
+	text-align: center;
+}
+
+#mainContainer .content{
+		border-top: 1px solid #333;
+		padding-top: 20px;
+		margin-top: 20px;
+		padding-left: 20px;
+}
+
+.container{
+	border:1px solid #ccc;
+	width: 96%;
+	height: auto;
+	padding:0 10px 10px 10px;
+	margin-bottom: 10px;
+	clear: both;
+	overflow: hidden;
+}
+
+.container.col-three{
+	width: 31%;
+	float: left;
+	clear: none;
+	min-height: 200px;
+}
+.block{display:block;}
+.left{float: left}
+.marLeft20{margin-left: 20px;}

@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+	<title>Angularjs ng-route</title>
+	<link rel="stylesheet" href="style.css">
+	<body ng-app="app">
+		<div id="header"></div>
+		<div id="mainContainer">
+			<nav>
+				<div class="menuItem">
+					<ul>
+						<li><a href="/#/angularJs">AngularJs</a></li>
+						<li><a href="/#/html5">HTML5</a></li>
+						<li><a href="/#/css3">CSS3</a></li>
+						<li><a href="/#/d3js">D3JS</a></li>
+					</ul>
+				</div>				
+			</nav>
+			<div class="content">
+				<div ng-view></div>
+			</div>
+			
+		</div>
+		<div id="footer"></div>
+		<script src="libs/angular.js"></script>
+		<script src="libs/angular-route.js"></script>
+		<script src="libs/d3.min.js"></script>
+
+		<script src="app.js"></script>
+		<script src="/controllers/angularJsController.js"></script>
+		<script src="/controllers/htmlController.js"></script>
+		<script src="/controllers/cssController.js"></script>
+		<script src="/controllers/d3Controller.js"></script>
+		<script src="/directives/dragDropDirective.js"></script>
+	</body>
+</html>
