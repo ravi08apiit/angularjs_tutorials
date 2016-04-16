@@ -1,1 +1,7 @@
-<h2>{{title}}</h2>
+<h2>{{d3Ctrl.title}}</h2>
+<p>
+	<button id="bargraphButton" ng-click="d3Ctrl.showBarGraph = true">Show Bar Graph</button>
+	<button id="bargraphButton" ng-click="d3Ctrl.showBarGraph = false">Show Circle Animation</button>
+</p>
+<bar-graph width="d3Ctrl.barGraph.width" height="d3Ctrl.barGraph.height" data="d3Ctrl.barGraph.data" scale="d3Ctrl.barGraph.scaleMeter" ng-if="d3Ctrl.showBarGraph"></bar-graph>
+<circle-animation ng-if="!d3Ctrl.showBarGraph"></circle-animation>

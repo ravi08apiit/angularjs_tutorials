@@ -18,7 +18,8 @@ app.config(['$routeProvider', function($routeProvider){
 		}).
 		when('/d3js', {
 			templateUrl:'/views/d3.html',
-			controller:'d3Controller'
+			controller:'d3Controller',
+			controllerAs:'d3Ctrl'
 		}).
 		otherwise({
         	redirectTo: '/angularJs'
